@@ -4,7 +4,7 @@ email: dumuqiao0317@gmail.com
 description: "Nabilzhang's Site"
 baseurl: ""
 url: "http://nabilzhang.github.io/"
-github_username:  nabbilzhang
+github_username:  nabilzhang
 
 # Build settings
 markdown: kramdown
