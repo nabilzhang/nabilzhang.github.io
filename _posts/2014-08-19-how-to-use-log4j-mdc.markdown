@@ -92,4 +92,4 @@ f3efb2d4-f361-4c6b-bab6-16c8476c8dd0 2014-04-09 16:31:47,157 [qtp14850080-26] IN
 f3efb2d4-f361-4c6b-bab6-16c8476c8dd0 2014-04-09 16:31:47,161 [qtp14850080-26] INFO  o.c.a.f.i.ProjectController - >> create() > GOT PARAMS 'Project [name=url, abstractContent=a, token=null]','(POST /project)@12571381 org.eclipse.jetty.server.Request@bfd2f5'
 {% endhighlight %}
 
-参考:http://logback.qos.ch/manual/mdc.html#autoMDC
+参考:<a href="http://logback.qos.ch/manual/mdc.html#autoMDC">http://logback.qos.ch/manual/mdc.html#autoMDC</a>
