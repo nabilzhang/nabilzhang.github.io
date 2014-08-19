@@ -82,7 +82,7 @@ public class SessionInterceptor extends HandlerInterceptorAdapter {
 
 3.3.日志打出的时候就会有可以标识区分不同客户端的请求了,用前面不同的token区分
 
-{% highlight %}
+{% highlight xml %}
 e6668b68-ee47-4cde-b673-25ed9bb74f1e 2014-04-09 16:31:14,579 [qtp14850080-27] INFO  o.c.a.f.i.AuthInterceptor - GET:/project
 c3b84462-81c6-49f7-923b-d8ba48c53c07 2014-04-09 16:31:31,295 [qtp14850080-27] INFO  o.c.a.f.i.AuthInterceptor - GET:/feedbacks
 b0e0f1fe-f30a-42b2-a103-e70a108561b7 2014-04-09 16:31:32,254 [qtp14850080-22] INFO  o.c.a.f.i.AuthInterceptor - GET:/feedbacks
