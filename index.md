@@ -14,7 +14,4 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">订阅<a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></p>
-
 </div>
