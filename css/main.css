@@ -227,14 +227,17 @@ a:visited { color: #205caa; }
 
 .post pre,
 .post code {
-  border: 1px solid #d5d5e9;
-  background-color: #eef;
-  padding: 8px 12px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  font-size: 15px;
-  overflow:scroll;
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.428571429;
+  color: #333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .post code { padding: 1px 5px; }
