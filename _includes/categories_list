@@ -1,6 +1,6 @@
 {% for category in categories_list %} 
-    	<li><a href="{{ BASE_PATH }}{{ site.categories_path }}#{{ category[0] }}-ref">
-    		{{ category[0] | join: "/" }}<span><sup>{{ category[1].size }}</sup></span>
+    	<li><a href="{{ BASE_PATH }}{{ site.categories_path }}#{{ category[0] }}-ref"><span class="label label-primary">
+    		{{ category[0] | join: "/" }}</span><span class="badge">{{ category[1].size }}</span>
     	</a></li>
     {% endfor %}
 {% assign categories_list = nil %}
