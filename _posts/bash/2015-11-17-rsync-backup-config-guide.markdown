@@ -8,8 +8,13 @@ categories: Backsh
 ###1.备份服务器配置
 安装Rsync
 rsync工作目录：/home/work/rsync
+{% highlight bash %}
+mkdir /home/work/rsync
+cd /home/work/rsync
+
 mkdir run
 mkdir log
+{% endhighlight %}
 
 ####1.1新建rsync.conf
 {% highlight bash %}
