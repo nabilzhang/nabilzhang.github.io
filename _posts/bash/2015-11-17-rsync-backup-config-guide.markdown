@@ -8,6 +8,7 @@ categories: Backsh
 ###1.备份服务器配置
 安装Rsync
 rsync工作目录：/home/work/rsync
+
 {% highlight bash %}
 mkdir /home/work/rsync
 cd /home/work/rsync
@@ -63,10 +64,10 @@ chmod 600 rsync.pass
 
 ####2.2备份文件
 {% highlight bash %}
-###从服务器备份到客户端
+#从服务器备份到客户端
 rsync -vzrtopg --delete --exclude "logs/" --exclude "rsync.pass" --progress work@x.x.x.x::nfs /home/work/nfs --password-file=/home/work/nfs/rsync.pass --port=8002
 
-###从客户端备份到备份服务器
+#从客户端备份到备份服务器
 rsync -vzrtopg --delete --exclude "logs/" --exclude "rsync.pass" --progress /home/work/nfs work@x.x.x.x::nfs --password-file=/home/work/nfs/rsync.pass --port=8002
 {% endhighlight %}
 
@@ -74,10 +75,10 @@ rsync -vzrtopg --delete --exclude "logs/" --exclude "rsync.pass" --progress /hom
 ####2.3自动备份
 配置crontab任务，每分钟一次备份
 {% highlight bash %}
-###从服务器备份到客户端
+#从服务器备份到客户端
 */1 * * * *     rsync -vzrtopg --delete --exclude "logs/" --exclude "rsync.pass" --progress work@x.x.x.x::nfs /home/work/nfs --password-file=/home/work/nfs/rsync.pass --port=8002
 
-###从客户端备份到备份服务器
+#从客户端备份到备份服务器
 */1 * * * *     rsync -vzrtopg --delete --exclude "logs/" --exclude "rsync.pass" --progress /home/work/nfs work@x.x.x.x::nfs --password-file=/home/work/nfs/rsync.pass --port=8002
 {% endhighlight %}
 
