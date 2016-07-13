@@ -2,3 +2,4 @@ _site
 .Ds_store
 .floo
 .flooignore
+.sass-cache

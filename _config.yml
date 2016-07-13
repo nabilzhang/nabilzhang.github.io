@@ -11,6 +11,6 @@ markdown: kramdown
 kramdown:
   input: GFM
 permalink: pretty
-highlighter: pygments
+highlighter: rouge
 
 future: true
