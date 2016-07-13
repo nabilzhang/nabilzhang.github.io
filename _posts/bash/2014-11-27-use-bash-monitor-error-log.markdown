@@ -2,7 +2,7 @@
 layout: post
 title:  "Shell Tail监控程序日志并发送邮件"
 date:   2014-11-27 23:37:55
-categories: Bash
+categories: bash
 ---
 
 场景：程序在运行过程中对于某些错误日志发生时期望能够及时知晓开发人员，同时将同一请求中的所有日志一并发送邮件给开发人员，便于快速定位问题。

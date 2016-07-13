@@ -7,7 +7,7 @@ categories: Java
 
 在JavaWeb中使用Log4J指南。每次在开始写一个项目的时候都忘记Log4J如何配置。所以写个步骤，作为记录。
 
-###第一步 下载Log4J jar包
+### 第一步 下载Log4J jar包
 
 从[Apache Logging Services site](http://logging.apache.org/log4j/ "Apache Logging Services site")下载最新的Log4J的jar包。如果是使用maven2的话，可以直接在pom.xml加上如下依赖，maven将会自动进行下载。
 
@@ -19,11 +19,11 @@ categories: Java
 </dependency>
 {% endhighlight %}
 
-###第二步 将jar包导入到Web项目
+### 第二步 将jar包导入到Web项目
 如果使用Maven2可以忽略这一步，因为在pom.xml中声明了这一依赖，Maven将会在build的时候自动的将jar进行导入。
 普通项目需要将下载下来的jar包复制到项目的WEB-INF/lib下。
 
-###第三步 导入Log4J xml配置文件或者properties配置文件
+### 第三步 导入Log4J xml配置文件或者properties配置文件
 对于Maven项目，直接将配置文件放置在<project>/Java Resources/src.main/resources目录下。
 
 非Maven项目，需要将配置文件放置在classpath下。
@@ -82,7 +82,7 @@ Xml实例: log4j.xml
 
 {% endhighlight %}
 
-###第四步 写Log代码
+### 第四步 写Log代码
 前面一切都配置好的情况下就可以写Log代码了。
 
 1.先导入Package
@@ -104,7 +104,7 @@ log.warn("I love programming.");
 log.fatal("I am now dead. I should have been a movie star.");    
 {% endhighlight %}
 
-###第五步 Run
+### 第五步 Run
 启动Web app可以查看运行到相关代码就可以打出日志了。
 
 【附】[GIT-HUB:https://github.com/nabilzhang/startup/tree/master/java.log4jdemo](https://github.com/nabilzhang/startup/tree/master/java.log4jdemo)

@@ -147,9 +147,15 @@ public class Md5Util {
 
 以上三种方式，通过注释其他两种，只运行其中一种的方式来给出JVM的一些信息
 
-运行时加入参数jvm参数：-XX:+PrintGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintGCApplicationStoppedTime
+运行时加入参数jvm参数：
 
-####1  8M buffer流处理
+```
+
+-XX:+PrintGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintGCApplicationStoppedTime
+
+```
+
+#### 1. 8M-buffer流处理
 
 {% highlight xml %}
 
@@ -177,7 +183,7 @@ Process finished with exit code 0
 
 {% endhighlight %}
 
-####2  apache common-codec的结果
+#### 2. apache common-codec的结果
 
 
 {% highlight xml %}
@@ -203,7 +209,7 @@ Disconnected from the target VM, address: '127.0.0.1:63674', transport: 'socket'
 {% endhighlight %}
 
 
-####3  全部读进内存再计算
+#### 3. 全部读进内存再计算
 
 {% highlight xml %}
 

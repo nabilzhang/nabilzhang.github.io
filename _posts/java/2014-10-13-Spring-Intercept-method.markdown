@@ -5,7 +5,7 @@ date:   2014-10-13 20:37:55
 categories: Java
 ---
 
-###1.继承MethodInterceptor，创建Interptor,拦截方法前后记录下时间算出时间差，以下代码仅供参考
+### 1.继承MethodInterceptor，创建Interptor,拦截方法前后记录下时间算出时间差，以下代码仅供参考
 
 {% highlight java %}
 package me.nabil.demo.autoproxydemo.interceptor;
@@ -61,7 +61,7 @@ public class ServiceInterceptor implements MethodInterceptor {
 
 {% endhighlight %}
 
-###2.业务代码
+### 2.业务代码
 
 {% highlight java %}
 package me.nabil.demo.autoproxydemo.service.impl;
@@ -97,7 +97,7 @@ public class MessageServiceImpl implements MessageService {
 
 {% endhighlight %}
 
-###3.main
+### 3.main
 
 {% highlight java %}
 
@@ -125,7 +125,7 @@ public class Application {
 {% endhighlight %}
 
 
-###4.XML配置
+### 4.XML配置
 {% highlight xml %}
 <?xml version="1.0" encoding="UTF-8" ?>
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

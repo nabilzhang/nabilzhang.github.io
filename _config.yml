@@ -8,6 +8,9 @@ github_username:  nabilzhang
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
 permalink: pretty
-pygments: true
+highlighter: pygments
 
+future: true

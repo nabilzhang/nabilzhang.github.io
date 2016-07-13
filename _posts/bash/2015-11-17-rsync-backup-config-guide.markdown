@@ -2,10 +2,10 @@
 layout: post
 title:  "Rsync自动备份配置"
 date:   2015-12-17 23:37:55
-categories: Backsh
+categories: bash
 ---
 
-###1.备份服务器配置
+### 1.备份服务器配置
 安装Rsync
 rsync工作目录：/home/work/rsync
 
@@ -17,7 +17,7 @@ mkdir run
 mkdir log
 {% endhighlight %}
 
-####1.1新建rsync.conf
+#### 1.1新建rsync.conf
 {% highlight bash %}
 uid = nobody
 gid = nobody
@@ -36,12 +36,12 @@ secrets file = /home/work/rsync/rsyncd.secrets
 
 以上配置中模块nfs是将文件备份到/home/work/nfs
 
-####1.2新建rsyncd.secrets
+#### 1.2新建rsyncd.secrets
 {% highlight bash %}
 work:workpass
 {% endhighlight %}
 
-####1.3启动备份服务器
+#### 1.3启动备份服务器
 {% highlight bash %}
 rsync --daemon --config=/home/work/rsync/rsync.conf --port=8002
 {% endhighlight %}
@@ -51,8 +51,8 @@ ps -ef | grep rsync
 如果有core，很有可能是最前面run和log目录不存在导致。
 
 
-###2客户端配置
-####2.1备份密码配置
+### 2客户端配置
+#### 2.1备份密码配置
 {% highlight bash %}
 vim rsync.pass
 #内容：
@@ -62,7 +62,7 @@ workpass
 chmod 600 rsync.pass
 因为密码文件只能让自己看见
 
-####2.2备份文件
+#### 2.2备份文件
 {% highlight bash %}
 #从服务器备份到客户端
 rsync -vzrtopg --delete --exclude "logs/" --exclude "rsync.pass" --progress work@x.x.x.x::nfs /home/work/nfs --password-file=/home/work/nfs/rsync.pass --port=8002
@@ -72,7 +72,7 @@ rsync -vzrtopg --delete --exclude "logs/" --exclude "rsync.pass" --progress /hom
 {% endhighlight %}
 
 
-####2.3自动备份
+#### 2.3自动备份
 配置crontab任务，每分钟一次备份
 {% highlight bash %}
 #从服务器备份到客户端
