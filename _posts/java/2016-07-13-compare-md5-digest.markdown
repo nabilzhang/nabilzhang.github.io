@@ -12,7 +12,7 @@ categories: Java
 {% highlight java %}
 
 /*
- * Copyright (C) 2016 Baidu, Inc. All Rights Reserved.
+ * Copyright (C) 2016 Nabilzhang. All Rights Reserved.
  */
 package me.nabil.mixed;
 
