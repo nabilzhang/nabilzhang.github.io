@@ -151,7 +151,7 @@ public class Md5Util {
 
 ####1  8M buffer流处理
 
-```
+{% highlight xml %}
 
 0.151: Total time for which application threads were stopped: 0.0000535 seconds, Stopping threads took: 0.0000072 seconds
 0.151: Total time for which application threads were stopped: 0.0000428 seconds, Stopping threads took: 0.0000083 seconds
@@ -175,12 +175,12 @@ Heap
 
 Process finished with exit code 0
 
-```
+{% endhighlight %}
 
 ####2  apache common-codec的结果
 
 
-```
+{% highlight xml %}
 
 0.184: Total time for which application threads were stopped: 0.0000615 seconds, Stopping threads took: 0.0000078 seconds
 0.185: Total time for which application threads were stopped: 0.0000279 seconds, Stopping threads took: 0.0000056 seconds
@@ -200,13 +200,13 @@ Heap
   class space    used 391K, capacity 424K, committed 512K, reserved 1048576K
 Disconnected from the target VM, address: '127.0.0.1:63674', transport: 'socket'
 
-```
+{% endhighlight %}
 
 
 ####3  全部读进内存再计算
 
+{% highlight xml %}
 
-```
 0.161: Total time for which application threads were stopped: 0.0000584 seconds, Stopping threads took: 0.0000190 seconds
 0.161: Total time for which application threads were stopped: 0.0000407 seconds, Stopping threads took: 0.0000054 seconds
 0.356: Total time for which application threads were stopped: 0.0001168 seconds, Stopping threads took: 0.0000177 seconds
@@ -229,7 +229,7 @@ Disconnected from the target VM, address: '127.0.0.1:63717', transport: 'socket'
 
 Process finished with exit code 0
 
-```
+{% endhighlight %}
 
 
 
