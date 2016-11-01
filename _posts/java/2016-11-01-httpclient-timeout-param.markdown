@@ -313,7 +313,8 @@ public class TimeoutTestControllerTest {
 
     /**
      * 5.connectionRequestTimeout测试，指从连接管理器中拿到连接的超时时间，由于使用基本的连接管理器，链接被占用时，直接无法分配链接
-     * connectionRequestTimeout并未生效，目前看来该参数只在连接池奏效
+     * connectionRequestTimeout并未生效，目前看来该参数只在连接池奏效.
+     * 该链接管理器(BasicHttpClientConnectionManager)是单线程情况下可以使用，多线程情况下不要使用。
      *
      * @throws Exception
      */
@@ -390,3 +391,5 @@ public class TimeoutTestControllerTest {
         </dependency>
 
 {% endhighlight %}
+
+更深理解可以参照:<a href="http://www.baeldung.com/httpclient-connection-management">http://www.baeldung.com/httpclient-connection-management</a>
